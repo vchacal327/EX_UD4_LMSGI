@@ -1,0 +1,15 @@
+<!ELEMENT empresa (pedido+, articulo+)>
+<!ELEMENT pedido (direcciones+, nombreEmpleado, fecha, observPedido)>
+    <!ELEMENT direcciones (direccion1, direccion2)>
+        <!ELEMENT direccion1 (#PCDATA)>
+        <!ELEMENT direccion2 (#PCDATA)>
+    <!ELEMENT nombreEmpleado (#PCDATA)>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT observPedido (#PCDATA)>
+<!ATTLIST pedido codigo ID #REQUIRED>
+<!ELEMENT articulo (numUds, precio, observArticulo, plazoRevision)>
+    <!ELEMENT numUds (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+    <!ELEMENT observArticulo (#PCDATA)>
+    <!ELEMENT plazoRevision (#PCDATA)>
+<!ATTLIST articulo codigo ID #REQUIRED>

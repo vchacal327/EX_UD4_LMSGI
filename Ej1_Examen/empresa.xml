@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empresa SYSTEM "empresa.dtd">
+<empresa>
+    <pedido codigo="A7541491">
+        <direcciones>
+            <direccion1>Grazalema (Cádiz). Calle Romero, nº 19.</direccion1>
+            <direccion2>El Bosque (Cádiz). Avenida Las Palmeras, nº 36.</direccion2>
+        </direcciones>
+        <nombreEmpleado>José Luis Márquez</nombreEmpleado>
+        <fecha>2019-08-17</fecha>
+        <observPedido>Incompleto</observPedido>
+    </pedido>
+    <articulo codigo="IFL-199">
+        <numUds>2</numUds>
+        <precio>19.99€</precio>
+        <observArticulo>Pieza de tubería metálica de 20 cm de diámetro, y 15 cm de largo.</observArticulo>
+        <plazoRevision>14 días</plazoRevision>
+    </articulo>
+</empresa>

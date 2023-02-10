@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="empresa">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="pedido">
+                    <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="direcciones">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element type="xs:string" name="direccion1"/>
+                                            <xs:element type="xs:string" name="direccion2"/>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                                <xs:element type="xs:string" name="nombreEmpleado"/>
+                                <xs:element type="xs:date" name="fecha"/>
+                                <xs:element type="xs:string" name="observaciones"/>
+                            </xs:sequence>
+                        <xs:attribute type="xs:string" name="codigo" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="articulo">
+                    <xs:complexType>
+                            <xs:sequence>
+                                <xs:element type="xs:integer" name="numUds"/>
+                                <xs:element type="xs:string" name="precio"/>
+                                <xs:element type="xs:string" name="observaciones"/>
+                                <xs:element type="xs:string" name="plazoRevision"/>
+                            </xs:sequence>
+                        <xs:attribute type="xs:string" name="codigo" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
